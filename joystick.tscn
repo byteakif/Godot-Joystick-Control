@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://njkpxsmkrapn"]
+
+[ext_resource type="Script" uid="uid://irruae0ocvkn" path="res://joystick.gd" id="1_3arnk"]
+[ext_resource type="Texture2D" uid="uid://bwgotcqsrrwli" path="res://RESİM/joystick_knob.png" id="2_l3cpe"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sc4t8"]
+load_path = "res://.godot/imported/joystick_background.png-ece48af8c92c9f63004b3190328c55f9.ctex"
+
+[node name="joystick" type="Control" unique_id=1419292223]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 83.0
+offset_top = 394.0
+offset_right = 303.0
+offset_bottom = 567.0
+script = ExtResource("1_3arnk")
+
+[node name="backround" type="TextureRect" parent="." unique_id=563222110]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 186.0
+offset_bottom = 162.0
+texture = SubResource("CompressedTexture2D_sc4t8")
+
+[node name="knob" type="TextureRect" parent="." unique_id=574474139]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 52.0
+offset_right = 129.0
+offset_bottom = 116.0
+mouse_filter = 0
+texture = ExtResource("2_l3cpe")
+expand_mode = 1
